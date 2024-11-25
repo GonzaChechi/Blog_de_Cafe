@@ -60,7 +60,7 @@ h3 {
 }
 
 h4 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 
 img {
@@ -81,7 +81,7 @@ img {
 }
 
 /*HEADER*/
-.header{
+.header {
     background-image: url(../img/banner.jpg);
     height: 60rem;
     background-size: cover;
@@ -89,52 +89,55 @@ img {
     background-position: center center;
 }
 
-.header__texto{
+.header__texto {
     color: var(--claro);
     text-align: center;
     margin-top: 5rem;
 }
 
-.barra{
+.barra {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 4rem;
 }
 
-.logo__nombre{
+.logo__nombre {
     font-weight: 400;
 }
-.logo__bold{
+
+.logo__bold {
     font-weight: 700;
 }
 
-.barra a{
+.barra a {
     color: var(--blanco);
 }
 
-.navegacion{
+.navegacion {
     display: flex;
     gap: 2rem;
 
 }
-.contenido-principal{
+
+.contenido-principal {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 4rem;
 }
 
-.entrada{
+.entrada {
     border-bottom: 1px solid var(--claro);
     margin-bottom: 2rem;
 
 }
 
-.entrada:last-of-type{
+.entrada:last-of-type {
     border: none;
     margin: 0;
 }
 
-.boton{
+.boton {
     display: inline-block;
     font-family: var(--fuenteHeading);
     color: var(--claro);
@@ -144,43 +147,97 @@ img {
     font-weight: 700;
     margin-bottom: 2rem;
 }
-.boton--primario{
+
+.boton--primario {
     background-color: var(--negro);
 }
 
-.sidebar{
-    text-align: center;
+.boton--secundario {
+    background-color: var(--primario);
 }
-.sidebar h3{
-    font-size: 2.3rem;
+
+.sidebar {
+    text-align: left;
+}
+
+.cursos {
+    list-style: none;
+}
+
+.widget-curso {
+    border-bottom: 1px solid var(--claro);
+}
+
+.widget-curso:last-of-type {
+    border-bottom: none;
+}
+
+.widget-curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+
+.widget-curso__info {
+    font-weight: 400;
+}
+
+.footer {
+    background-color: var(--negro);
+    margin-top: 4rem;
 }
 
 
-/*MEDIA QUERY*/ 
+
+
+
+/*MEDIA QUERY*/
+@media (max-width: 1250px) {
+    .sidebar h3 {
+        font-size: 2.2rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1.2;
+    }
+}
+
 @media (max-width: 900px) {
-    .contenido-principal{
+    .contenido-principal {
         display: block;
+    }
+
+    .sidebar h3 {
+        font-size: 3.2rem;
+    }
+
+    .entrada:last-of-type {
+        border-bottom: 1px solid var(--claro);
+        margin-bottom: 2rem;
     }
 }
 
 @media (max-width: 650px) {
-    .barra{
+    .barra {
         display: block;
         text-align: center;
-    } 
-    .navegacion{
-       justify-content: center;
-       font-weight: 700;
     }
-.header__texto h2{
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-.boton{
-    display: block;
-}
-.entrada:last-of-type{
-    border-bottom: 1px solid var(--claro);
-    margin-bottom: 2rem;
-}
+
+    .navegacion {
+        justify-content: center;
+        font-weight: 700;
+        margin-top: 3rem;
+    }
+
+    .header__texto h2 {
+        font-size: 3.5rem;
+    }
+
+    .boton {
+        display: block;
+    }
+
+
 }
