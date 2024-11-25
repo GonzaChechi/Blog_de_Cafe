@@ -1,0 +1,8 @@
+.sobre-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+.sobre-nosotros__texto__parrafo:first-of-type{
+    margin-bottom: 2rem;
+}

@@ -112,6 +112,8 @@ img {
 
 .barra a {
     color: var(--blanco);
+    padding-bottom: 4rem;
+
 }
 
 .navegacion {
@@ -184,6 +186,7 @@ img {
 .footer {
     background-color: var(--negro);
     margin-top: 4rem;
+
 }
 
 
