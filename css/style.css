@@ -148,6 +148,11 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .boton--primario {

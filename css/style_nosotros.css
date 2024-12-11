@@ -6,3 +6,9 @@
 .sobre-nosotros__texto__parrafo:first-of-type{
     margin-bottom: 2rem;
 }
+
+@media (max-width: 900px) {
+    .sobre-nosotros{
+        display: block;
+    }
+}
